@@ -7,5 +7,5 @@ class FragTrap: public ClapTrap
 		FragTrap();
 		FragTrap(std::string);
 		~FragTrap();
-		void guardGate();
+		void highFivesGuys(void);
 };

@@ -21,4 +21,6 @@ int main()
 	ScavTrap s1;
 	FragTrap f1;
 
+	f1.highFivesGuys();
+
 }
