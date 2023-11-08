@@ -1,19 +1,30 @@
-#CPPC is short for CPP Compiler
-CPPC=c++
-NAME=prg
-SRCS=main.cpp ClapTrap.cpp ScavTrap.cpp
+#CXX is short for CPP Compiler
+CXX:=c++
+NAME:=prg
+SRCS:=main.cpp ClapTrap.cpp ScavTrap.cpp
+OBJS:= ${SRCS:.cpp=.o} 
+CPPFLAGS:=-Wall -Wextra -Werror -std=c++98
 
 all: $(NAME)
 
-$(NAME): $(SRCS)
-	$(CPPC) -Wall -Wextra -Werror -std=c++98 $(SRCS) -o $(NAME)
+$(NAME): $(OBJS)
+	$(CXX) $(CFLAGS) $(OBJS) -o $(NAME)
 
 clean:
-	rm $(NAME)
+	rm $(OBJS)
 
 fclean: clean
+	rm $(NAME)
 
 re: fclean
 	make all
 
-.PHONY: all clean fclean re
+go: 
+	make all
+	./$(NAME)
+
+ergo: 
+	make re
+	./$(NAME)
+
+.PHONY: all clean fclean re go ergo

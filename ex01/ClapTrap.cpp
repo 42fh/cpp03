@@ -10,6 +10,11 @@ ClapTrap::ClapTrap(std::string str) : Name(str), HitPoints(10), EnergyPoints(10)
 	std::cout << "ClapTrap String Constructor called" << std::endl;
 }
 
+ClapTrap::ClapTrap(std::string str, unsigned int a1, unsigned int a2, unsigned int a3) : Name(str), HitPoints(a1), EnergyPoints(a2), AttackDamage(a3)
+{
+	std::cout << "ClapTrap String Int Int Int Constructor called" << std::endl;
+}
+
 ClapTrap::ClapTrap(ClapTrap &other) : Name(other.Name), HitPoints(other.HitPoints), EnergyPoints(other.EnergyPoints), AttackDamage(other.AttackDamage) 
 {
 	std::cout << "ClapTrap Copy Constructor called" << std::endl;
