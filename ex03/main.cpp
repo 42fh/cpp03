@@ -1,6 +1,7 @@
 #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
+#include "DiamondTrap.hpp"
 
 int main()
 {
@@ -18,18 +19,20 @@ int main()
 	// }
 	
 
-	{
-		ScavTrap s1;
-	}
+	// {
+	// 	ScavTrap s1;
+	// }
 
-	{
-		FragTrap f1;
-		f1.highFivesGuys();
-	}
+	// {
+	// 	FragTrap f1;
+	// 	f1.highFivesGuys();
+	// }
 
-	{
-		FragTrap f2("FragTrap2");
-		f2.highFivesGuys();
-	}
+	// {
+	// 	FragTrap f2("FragTrap2");
+	// 	f2.highFivesGuys();
+	// }
+
+	DiamondTrap d1;
 
 }

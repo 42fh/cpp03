@@ -1,9 +1,10 @@
 #CXX is short for CPP Compiler
 CXX:=c++
 NAME:=prg
-SRCS:=main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
+SRCS:=main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 OBJS:= ${SRCS:.cpp=.o} 
-CPPFLAGS:=-Wall -Wextra -Werror -std=c++98
+CPPFLAGS:=-Wall -Wextra -Werror -std=c++98 
+#Interesting? flags: -Wshadow and -Wno-shadow
 
 all: $(NAME)
 
