@@ -33,6 +33,14 @@ int main()
 	// 	f2.highFivesGuys();
 	// }
 
-	DiamondTrap d1;
+	// { DiamondTrap d1; d1.inspect();}
+
+	{ 
+		DiamondTrap d2("D2"); 
+		d2.inspect();
+		d2.attack("TargetofD2");
+		d2.whoAmI();
+	}
+
 
 }
